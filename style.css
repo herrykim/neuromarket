@@ -1,28 +1,49 @@
 *{
  margin: 0;
     padding:0;
-    font-family: sans-serif;
+    font-family: Georgia;
+    
+    
+}
+
+#myvid {
+    position: 
+    top: 50%;
+    z-index: 1;
 }
 .container{
+
     width:100%;
-        height:400%;
-    background: #797d99;
+    height:480%;
+background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
 }
-.menu ul{
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+menu ul{
         display: inline-flex;
     margin:50px;
     }
 .menu ul li{
     list-style: none;
     margin: 0 20px;
-    color:#fff;
+    color:floralwhite;
     cursor: pointer;
     
+*/
 }
 .logo img{
-    width:250px;
-    margin-top: -7px;
-    margin-right: 48px;
+    width:300px;
+    margin-top: 20px;
+    margin-left: 40px;
 
 }
 
@@ -36,25 +57,33 @@
         top:25%;
         left: 130px;
     position:absolute;
-    color:#fff;
+    color:gainsboro;
 }
 .app-text {
     width: 50%;
     float:left;
-    
+    margin-top: 15%;
 }
 .app-text h1{
     font-size:43px;
     width:640px;
     position:relative;
-    margin-left: 20px;
+    margin-left: 15px;
+    
 }
 .app-text p{
-    font-size:15px;
+    font-size:18px;
     width:650px;
-margin: 30px 0 30px 20px; 
-    line-height: 25px;
-    color:#fff;
+margin: 20px 0 20px 0px; 
+    line-height: 30px;
+    color:gainsboro;
+}
+.app-text h2{
+    font-size:48px;
+    width:640px;
+    position:absolute;
+    margin-top: 35%;
+
 }
 .app-picture {
     width: 50%;
@@ -71,4 +100,68 @@ margin: 30px 0 30px 20px;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+}
+/*---------service-------*/
+.service{
+    margin-top: 40%;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 43px;
+    color: gainsboro;
+}
+.subtitle{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 18px;
+    color:gainsboro;
+}
+.middlepic{
+    float: left;
+    width:50%;
+}
+.middlepic img{
+    width: 50%;
+    margin-top:-18px;
+
+}
+.midbanner{
+    width:80%;
+    height: 20%;
+        left: 130px;
+    position:relative;
+}
+.middlepic video{
+       width: 115%;
+    margin-top:-20px;
+    position:relative;
+}
+.threeD {
+  color: darkgrey;
+  white-space: nowrap;
+  position: absolute;
+  top: 18%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+
+.threeD:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+
+#button{
+    margin-left: 30%;
 }
